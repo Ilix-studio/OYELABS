@@ -16,6 +16,9 @@ app.use(express.json({ extented: false }));
 
 //Routes
 app.use('/api/customer', require('./routes/api/customerAPI'));
+app.use('/api/student', require('./routes/api/studentAPI'));
+app.use('/api/user', require('./routes/api/userAPI'));
+
 
 //mongoDB
 connectDB();
